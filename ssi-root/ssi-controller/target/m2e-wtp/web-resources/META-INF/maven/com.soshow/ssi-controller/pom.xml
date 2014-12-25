@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.soshow</groupId>
+		<artifactId>ssi-root</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>ssi-controller</artifactId>
+	<packaging>war</packaging>
+	<name>ssi-controller Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<log4j.version>1.2.13</log4j.version>
+		<mysql.version>5.1.26</mysql.version>
+		<jackson.mapper.asl.version>1.9.4</jackson.mapper.asl.version>
+		<commons.fileupload.version>1.3.1</commons.fileupload.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.soshow</groupId>
+			<artifactId>ssi-service</artifactId>
+			<version>${service.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.soshow</groupId>
+			<artifactId>ssi-model</artifactId>
+			<version>${model.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${jackson.mapper.asl.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>${commons.fileupload.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>ssi-controller</finalName>
+	</build>
+</project>
