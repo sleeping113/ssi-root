@@ -1,4 +1,4 @@
-ssi-root
+ssi
 ========
 
 *用Eclipse创建的maven聚合性的基于springmvc + spring + ibatis的ssi框架
@@ -24,4 +24,5 @@ ssi-root
 		--ssi-controller
 
 author:wlm
+
 qq:635216982@qq.com
